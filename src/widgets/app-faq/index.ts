@@ -1,0 +1,1 @@
+export { AppFAQ } from './ui';
