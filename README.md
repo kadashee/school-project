@@ -1,45 +1,51 @@
-# school-project
+# 📚 School Project
 
-This template should help get you started developing with Vue 3 in Vite.
+Этот проект представляет собой пример разработки веб-приложений с использованием Vue 3. На данный момент проект всё ещё находится в стадии разработке и многие функции недоступны.
 
-## Recommended IDE Setup
+## 🚀 Технологии
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- [Vue 3](https://vuejs.org/)
+- [Vite](https://vitejs.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Vitest](https://vitest.dev/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
 
-## Type Support for `.vue` Imports in TS
+## 🛠 Установка и запуск
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+1. Клонируйте репозиторий:
+   ```bash
+   git clone https://github.com/kadashee/school-project.git
+   cd school-project
 
-## Customize configuration
+2. Установите зависимости:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+   ```bash
+   npm install
+   ```
 
-## Project Setup
+3. Запустите сервер разработки:
 
-```sh
-npm install
+   ```bash
+   npm run dev
+   ```
+
+4. Откройте в браузере:
+
+   ```
+   http://localhost:5173
+   ```
+
+## 🧪 Тестирование
+
+Для запуска тестов используйте:
+
+```bash
+npm run test
 ```
 
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
+Хочешь, чтобы я сам закоммитил его в репозиторий или подготовил pull request?
 ```
