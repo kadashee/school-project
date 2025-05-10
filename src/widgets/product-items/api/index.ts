@@ -1,1 +1,1 @@
-export { fetchCourses } from './fetch-courses';
+export { fetchProducts } from './fetch-products.ts';

@@ -1,9 +1,12 @@
 <template>
-<div v-if="courses">
+<div
+  v-if="items.length"
+  class="space-y-4"
+>
   <ProductItem
-  v-for="(course, index) in courses"
-  :key="index"
-  :title="course.title"
+    v-for="(item, index) in items"
+    :key="index"
+    :item="item"
   />
 </div>
 </template>
@@ -11,13 +14,14 @@
 <script setup lang="ts">
 import ProductItem from './product-item.vue';
 import {onMounted, ref} from "vue";
-import { fetchCourses } from "../api";
+import { fetchProducts } from "../api";
+import type { Product } from "../api/product.ts";
 
-const courses = ref<{ title: string } | null>(null);
+const items = ref<Product[]>([]);
 
 onMounted(async () => {
   try {
-    courses.value = await fetchCourses(0, 1);
+    items.value = await fetchProducts(0, 5);
 
   } catch (error) {
     console.error('Ошибка при загрузке курса:', error);

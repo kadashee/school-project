@@ -1,0 +1,1 @@
+export { FaqItems } from './ui';
