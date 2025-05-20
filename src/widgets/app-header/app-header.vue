@@ -14,15 +14,7 @@
       <a href="#"> ОГЭ </a>
       <div class="relative group">
         <div class="flex items-center">
-          <a href="#"> Другие направления</a>
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-0.5">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-          <div class="absolute hidden group-hover:inline-block top-10 border-2 pr-14 pl-2 py-5 rounded-lg text-sm">
-            <a class="mb-2 block" href="#">Средняя школа</a>
-            <a class="mb-2 block" href="#">Олимпиады</a>
-            <a class="mb-2 block" href="#">Репетиторы</a>
-          </div>
+          <OpeningsList />
         </div>
       </div>
       <a href="#"> О нас </a>
@@ -39,4 +31,5 @@
 </template>
 <script setup lang="ts">
 import { RouterLink } from 'vue-router';
+import { OpeningsList } from "@/widgets/openings-list";
 </script>

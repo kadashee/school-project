@@ -7,10 +7,10 @@
         &times;
       </button>
 
-      <ClassYearItems />
-      <ClassTypeItems />
-      <ClassGoalItems />
-      <TeacherItems />
+      <ClassYears />
+      <ClassTypes />
+      <Goals />
+      <Teachers />
       <FilterButtons />
     </DialogPanel>
 
@@ -19,10 +19,10 @@
 </template>
 
 <script setup lang="ts">
-import { ClassYearItems } from './class-years';
-import { ClassTypeItems } from './class-types';
-import { ClassGoalItems } from './class-goals';
-import { TeacherItems } from './class-teachers';
+import { ClassYears } from './class-years';
+import { ClassTypes } from './class-types';
+import { Goals } from './goals';
+import { Teachers } from './teachers';
 import { FilterButtons } from './filter-buttons';
 import { defineModel } from 'vue';
 import {

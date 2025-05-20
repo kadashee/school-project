@@ -1,1 +1,0 @@
-export { TeacherItems } from './ui';

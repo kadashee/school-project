@@ -1,1 +1,1 @@
-export { ClassYearItems } from './ui';
+export { ClassYears } from './ui';

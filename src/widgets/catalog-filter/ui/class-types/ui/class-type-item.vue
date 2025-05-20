@@ -8,10 +8,10 @@
 </template>
 
 <script setup lang="ts">
-import type { ClassTypes } from '../api/class-types.ts'
+import type { ClassType } from '../api/class-type.ts'
 
 interface Props {
-  item: ClassTypes,
+  item: ClassType,
 }
 
 defineProps<Props>();

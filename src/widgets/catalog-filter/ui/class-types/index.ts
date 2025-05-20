@@ -1,1 +1,1 @@
-export { ClassTypeItems } from './ui';
+export { ClassTypes } from './ui';

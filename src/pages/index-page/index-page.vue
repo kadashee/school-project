@@ -1,15 +1,15 @@
 <template>
   <AppHeader class="mb-4"/>
-  <AppSwitcher />
+  <MainSwitcher />
   <AppBanner />
   <AppHeroBanner />
-  <FaqItems />
+  <Faqs />
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { AppHeader } from '@/widgets/app-header';
 import { AppBanner } from '@/widgets/app-banner';
 import { AppHeroBanner } from '@/widgets/app-hero-banner';
-import { FaqItems } from '@/widgets/faq-items';
-import { AppSwitcher } from '@/widgets/app-switcher';
+import { Faqs } from '@/widgets/main-faq';
+import { MainSwitcher } from '@/widgets/main-switcher';
 </script>

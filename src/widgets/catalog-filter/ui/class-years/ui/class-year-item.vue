@@ -6,10 +6,10 @@
 </template>
 
 <script setup lang="ts">
-import type { ClassYears } from '../api/class-years.ts'
+import type { ClassYear } from '../api/class-year.ts'
 
 interface Props {
-  item: ClassYears,
+  item: ClassYear,
   icon: string,
 }
 

@@ -1,1 +1,0 @@
-export { ProductItems } from './ui';
