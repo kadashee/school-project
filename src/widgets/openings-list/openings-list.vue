@@ -2,7 +2,7 @@
   <Menu as="div" class="relative">
     <div @mouseenter="isOpen = true" @mouseleave="isOpen = false">
     <MenuButton as="div" class="flex cursor-pointer">Другие направления
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-0.5">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="">
         <polyline points="6 9 12 15 18 9"></polyline>
       </svg></MenuButton>
     <MenuItems v-if="isOpen" class="flex flex-col absolute top-10 left-0 border border-gray-300 z-99">
