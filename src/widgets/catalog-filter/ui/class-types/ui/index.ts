@@ -1,1 +1,1 @@
-export { default as ClassTypes } from './class-types.vue'
+export { default as ClassTypes } from './class-types.vue';

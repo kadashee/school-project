@@ -4,7 +4,7 @@ export enum BrandbookStyleId {
   SocialScience = 'SOCIAL_SCIENCE',
   Chemistry = 'CHEMISTRY',
   History = 'HISTORY',
-  Physics = 'PHYSICS',
+  Physics = 'PHYSICS'
 }
 
 export interface Product {
@@ -47,5 +47,5 @@ export const brandbookIdToColorMapper = {
   [BrandbookStyleId.SocialScience]: '#f2d555',
   [BrandbookStyleId.Chemistry]: '#d266ed',
   [BrandbookStyleId.History]: '#f2d555',
-  [BrandbookStyleId.Physics]: '#ed6671',
-}
+  [BrandbookStyleId.Physics]: '#ed6671'
+};

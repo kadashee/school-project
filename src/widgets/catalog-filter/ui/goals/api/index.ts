@@ -1,1 +1,1 @@
-export { getGoals } from './get-goals.ts'
+export { getGoals } from './get-goals.ts';

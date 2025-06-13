@@ -1,1 +1,1 @@
-export { getClassYears } from './get-class-years.ts'
+export { getClassYears } from './get-class-years.ts';

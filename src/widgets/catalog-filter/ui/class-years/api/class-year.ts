@@ -4,5 +4,5 @@ export interface ClassYear {
   brandbook_style_id: string;
   logo: string;
   title: string;
-  slug: string,
+  slug: string;
 }

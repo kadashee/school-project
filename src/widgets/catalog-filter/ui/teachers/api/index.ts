@@ -1,1 +1,1 @@
-export { getTeachers } from './get-teachers.ts'
+export { getTeachers } from './get-teachers.ts';

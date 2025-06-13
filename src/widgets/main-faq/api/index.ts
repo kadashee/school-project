@@ -1,1 +1,1 @@
-export { getFaq } from './get-faq.ts'
+export { getFaq } from './get-faq.ts';

@@ -1,1 +1,1 @@
-export { getClassTypes } from './get-class-types.ts'
+export { getClassTypes } from './get-class-types.ts';

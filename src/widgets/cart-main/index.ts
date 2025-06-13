@@ -1,1 +1,1 @@
-export { default as CoursesBin } from './cart-main.vue';
+export { default as CartMain } from './cart-main.vue';

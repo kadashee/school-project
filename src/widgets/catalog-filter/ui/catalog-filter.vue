@@ -1,9 +1,13 @@
 <template>
-
-  <Dialog :open="isOpen" @close="isOpen = false">
+  <Dialog
+    :open="isOpen"
+    @close="isOpen = false"
+  >
     <DialogPanel class="fixed top-0 right-0 h-full w-40vw bg-white overflow-y-auto p-4">
-
-      <button @click="isOpen = !isOpen" class="absolute top-4 right-4 text-xl font-bold">
+      <button
+        @click="isOpen = !isOpen"
+        class="absolute top-4 right-4 text-xl font-bold"
+      >
         &times;
       </button>
 
@@ -13,8 +17,6 @@
       <Teachers />
       <FilterButtons />
     </DialogPanel>
-
-
   </Dialog>
 </template>
 
@@ -25,11 +27,7 @@ import { Goals } from './goals';
 import { Teachers } from './teachers';
 import { FilterButtons } from './filter-buttons';
 import { defineModel } from 'vue';
-import {
-  Dialog,
-  DialogPanel
-} from '@headlessui/vue'
+import { Dialog, DialogPanel } from '@headlessui/vue';
 
-const isOpen = defineModel<boolean>({ required: true })
-
+const isOpen = defineModel<boolean>({ required: true });
 </script>

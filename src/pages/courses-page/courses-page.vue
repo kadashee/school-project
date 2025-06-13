@@ -1,8 +1,8 @@
 <template>
-  <AppHeader class="mb-4"/>
+  <AppHeader class="mb-4" />
   <BaseContainer>
     <CoursesCatalogHeader />
-    <CoursesCatalogFilter v-model="isFilterOpen"/>
+    <CoursesCatalogFilter v-model="isFilterOpen" />
     <Products />
     <CatalogFilter v-model="isFilterOpen" />
   </BaseContainer>
@@ -18,5 +18,4 @@ import { CatalogFilter } from '@/widgets/catalog-filter/ui';
 import { ref } from 'vue';
 
 const isFilterOpen = ref(false);
-
 </script>

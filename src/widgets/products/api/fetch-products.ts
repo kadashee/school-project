@@ -5,8 +5,8 @@ export const fetchProducts = async (offset = 0, limit = 10): Promise<Product[]> 
   const response = await instance.get('/v2/seo/products/', {
     params: {
       offset,
-      limit,
-    },
+      limit
+    }
   });
   return response.data.results;
 };

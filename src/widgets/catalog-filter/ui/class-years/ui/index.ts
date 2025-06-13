@@ -1,1 +1,1 @@
-export { default as ClassYears } from './class-years.vue'
+export { default as ClassYears } from './class-years.vue';

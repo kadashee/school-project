@@ -1,5 +1,5 @@
 <template>
-  <AppHeader class="mb-4"/>
+  <AppHeader class="mb-4" />
   <MainSwitcher />
   <AppBanner />
   <AppHeroBanner />

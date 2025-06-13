@@ -4,5 +4,5 @@ export interface ClassType {
   brandbook_style_id: BrandbookStyleId;
   logo: string;
   title: string;
-  slug: string,
+  slug: string;
 }

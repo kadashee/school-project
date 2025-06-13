@@ -4,10 +4,11 @@
       {{ item.question }}
     </div>
     <button
-      class="text-gray-400 hover:text-gray-600 text-xl w-10 h-10 rounded-full border border-gray font-bold transition absolute right-[-50px] top-6"
+      class="text-gray-400 hover:text-gray-600 text-xl w-10 h-10 rounded-full border border-gray font-bold transition absolute
+        right-[-50px] top-6"
       @click="toggle"
     >
-      {{ isOpened? 'x' : '+'}}
+      {{ isOpened ? 'x' : '+' }}
     </button>
     <div
       v-if="isOpened"
@@ -21,7 +22,7 @@
 import { ref } from 'vue';
 import type { Faq } from '../api/faq.ts';
 interface Props {
-  item: Faq,
+  item: Faq;
 }
 
 defineProps<Props>();
@@ -30,5 +31,5 @@ const isOpened = ref(false);
 
 const toggle = () => {
   isOpened.value = !isOpened.value;
-}
+};
 </script>
