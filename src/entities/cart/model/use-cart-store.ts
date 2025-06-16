@@ -31,9 +31,7 @@ export const useCartStore = defineStore('cart', () => {
       ids.value.push(id);
     }
   }
-
-  const cart =
-
+  
   return { ids, isInCart, toggle };
 });
 
