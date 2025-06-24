@@ -1,1 +1,1 @@
-export { default as CartMain } from './cart-main.vue';
+export { CartList as CartMain } from './ui';
