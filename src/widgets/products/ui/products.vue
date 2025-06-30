@@ -15,7 +15,7 @@
 import ProductItem from './product-item.vue';
 import { onMounted, ref } from 'vue';
 import { fetchProducts } from '../api';
-import type { Product } from '../api/product.ts';
+import type { Product } from '@/entities/product';
 
 const items = ref<Product[]>([]);
 

@@ -1,19 +1,29 @@
 import { defineStore } from 'pinia';
 import { ref } from 'vue';
+import type { Product } from '@/widgets/products/api/product';
 
 export const useCartStore = defineStore('cart', () => {
   // Основное состояние - просто массив ID.
-  const ids = ref<number[]>([]);
+  const items = ref<Product[]>([]);
 
-  const isInCart = (id: number) => ids.value.includes(id);
+  const isInCart = (id: number) => {
+    return items.value.some((item) => item.id === id);
+  }
 
-  const toggle = (id: number) => {
-    if (isInCart(id)) {
-      ids.value = ids.value.filter((i) => i !== id);
+  const toggle = (product: Product) => {
+    const productId = product.id;
+    const productInCart = items.value.find((item) => item.id === productId);
+
+    if (productInCart) {
+      items.value = items.value.filter((item) => item.id !== productId);
     } else {
-      ids.value.push(id);
+      items.value.push(product);
     }
+
   };
 
-  return { ids, isInCart, toggle };
+  return { items, isInCart, toggle };
 });
+
+
+// 

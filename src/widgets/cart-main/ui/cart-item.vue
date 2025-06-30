@@ -62,8 +62,8 @@
 
 <script setup lang="ts">
 import { useCartStore } from '@/entities/cart';
-import type { Product as CartItemResponse } from '@/widgets/products/api';
+import type { CartItem } from '@/entities/cart';
 
 const cartStore = useCartStore();
-defineProps<{ item: CartItemResponse }>();
+defineProps<{ item: Product }>();
 </script>

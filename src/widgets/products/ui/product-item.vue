@@ -51,13 +51,13 @@
         {{ item.monthly_price }} р./мес
       </div>
 
-      <AddToCart :id="item.id" class="mt-auto" />
+      <AddToCart :product="item" class="mt-auto" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import { type Product, brandbookIdToColorMapper } from '../api/product.ts';
+import { type Product, brandbookIdToColorMapper } from '@/entities/product';
 import { getBrandbookIconUrl } from '@/shared/lib/get-brandbook-icon-url.ts';
 import { AddToCart } from '@/features/add-to-cart/ui';
 
